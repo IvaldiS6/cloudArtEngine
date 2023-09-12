@@ -11,14 +11,14 @@
  * Original Metaplex.js util by https://github.com/DawidAbram
  */
 
-const NFTName = "NameOfNFT"; //This is the name there will be showen on your NFTs !!! Name can at max be 32 characters !!!
-const symbol = "PRJSMBL"; // !!! Symbol can at max be 10 characters !!!
+const NFTName = "Weeping Angel"; //This is the name there will be showen on your NFTs !!! Name can at max be 32 characters !!!
+const symbol = "TEARS"; // !!! Symbol can at max be 10 characters !!!
 
 const baseUriPrefix = ""; // OPTIONAL, if you need to prefix your image#.png with a baseURI
-const description = "Default Solana Description";
+const description = "Burning with unwavering bullish determination, Fire Angels forge their path through searing challenges, their resolve flickering like an eternal flame. Adorned with shimmering embers, they radiate with intensity. Get ready to witness their awe-inspiring ferocity as they light up Solana!";
 const external_url = ""; // add optional external URL here, e.g, https://0n10nDivision.com
 
-const royaltyFee = 200; // This is 2% royalty fee
+const royaltyFee = 1000; // This is 10% royalty fee
 
 /**
  * Array of Creators.
@@ -26,7 +26,7 @@ const royaltyFee = 200; // This is 2% royalty fee
  */
 const creators = [
   {
-    address: "WALLET_ADDRESS", // Wallet address for royalties
+    address: "WRWFx2agVp6JtFqbXYt144zEKyFV7VSTKR8uBwmwkqn", // Wallet address for royalties
     share: 100, // Amount of shares for this wallet, can be more than one, all have to add up to 100 together !!! And a maximum of 4 creators !!!
   },
   // uncomment and edit for additional creator.
@@ -47,7 +47,7 @@ module.exports = {
   description,
   royaltyFee,
   creators,
-  external_url,
-  baseUriPrefix,
+  //external_url,
+  //baseUriPrefix,
   propertyCategory,
 };

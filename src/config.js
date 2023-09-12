@@ -28,34 +28,33 @@ const outputJPEG = false; // if false, the generator outputs png's
 const startIndex = 0;
 
 const format = {
-  width: 512,
-  height: 512,
+  width: 1500,
+  height: 1500,
   smoothing: true, // set to false when up-scaling pixel art.
 };
 
 const background = {
-  generate: true,
+  generate: false,
   brightness: "80%",
 };
 
 const layerConfigurations = [
   {
-    growEditionSizeTo: 10,
-    namePrefix: "Series 2", // Use to add a name to Metadata `name:`
+    growEditionSizeTo: 100, //#850 earth, #575 air, #300 water, #225 fire
+    namePrefix: "", // Use to add a name to Metadata `name:`
     layersOrder: [
       { name: "Background" },
       {
-        name: "Back Accessory",
+        name: "Back",
         // options: {
         //   bypassDNA: true,
         // },
       },
-      { name: "Head" },
-      { name: "Clothes" },
-      { name: "Eyes" },
-      { name: "Hair" },
-      { name: "Accessory" },
-      { name: "Shirt Accessories" },
+      { name: "Element" },
+      { name: "Clothing" },
+      { name: "Head Gear" },
+      { name: "Necklace" },
+      { name: "Held Item" },
     ],
   },
   // {
@@ -83,7 +82,7 @@ const debugLogs = true;
  ***********************/
 
 // if you use an empty/transparent file, set the name here.
-const emptyLayerName = "NONE";
+const emptyLayerName = "None";
 
 /**
  * Incompatible items can be added to this object by a files cleanName
@@ -93,9 +92,33 @@ const emptyLayerName = "NONE";
  * accidentally set incompatibilities for the _wrong_ item.
  */
 const incompatible = {
-  //   Red: ["Dark Long"],
-  //   // directory incompatible with directory example
-  //   White: ["rare-Pink-Pompadour"],
+  "Dark Hood": ["Kitsune", "Goblin Mask", "Reef", "Scraps the Dog", "Terminator Glasses", "3D Glasses", "Bandana", "Cyclops Mask", "Jason Mask", "Pirate Hat", "Devil Mask", "Crown"],
+  "Light Hood": ["Kitsune", "Goblin Mask", "Reef", "Scraps the Dog", "Terminator Glasses", "3D Glasses", "Bandana", "Cyclops Mask", "Jason Mask", "Pirate Hat", "Devil Mask", "Crown"],
+  "Hooded Mage": ["Kitsune", "Goblin Mask", "Reef", "Scraps the Dog", "Terminator Glasses", "3D Glasses", "Bandana", "Cyclops Mask", "Jason Mask", "Pirate Hat", "Devil Mask", "Crown"],
+  "Skull King": ["Skeleton Parrot"],
+  "Shoulder Armor": ["Skeleton Parrot"],
+  "Knights Armor": ["Skeleton Parrot"],
+  "Samurai Armor": ["Skeleton Parrot"],
+  "Kitsune": ["Wood Pendant", "Eye Pearls", "Cross", "Blue Flame", "Skull"],
+  "Bubble Gum": ["Wood Pendant", "Eye Pearls", "Cross", "Blue Flame", "Skull"],
+  "Pirate": ["Cross", "Bell"],
+  "Goblin Mask": ["Wood Pendant", "Eye Pearls", "Cross", "Blue Flame", "Skull"],
+  "Aqua Halo": ["Solana Scythe"],
+  "Crown": ["Solana Scythe"],
+  "The Eye": ["Solana Scythe"],
+  "Red Flame": ["Solana Scythe"],
+  "Blue Flame": ["Solana Scythe"],
+  "Blaze Halo": ["Solana Scythe"],
+  "Pistachio Halo": ["Solana Scythe"],
+  "Marigold Halo": ["Solana Scythe"],
+  "Heavenly Halo": ["Solana Scythe"],
+  "Sapphire Halo": ["Solana Scythe"],
+  "Jade Halo": ["Solana Scythe"],
+  "Bubblegum Halo": ["Solana Scythe"],
+
+  // Red: ["Dark Long"],
+  // directory incompatible with directory example
+  // White: ["rare-Pink-Pompadour"],
 };
 
 /**
