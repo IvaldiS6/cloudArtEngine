@@ -53,7 +53,7 @@ const layerConfigurations = [
       { name: "Clothes" },
       { name: "Eyes" },
       { name: "Mouth" },
-      { name: "Hedware" },
+      { name: "Headware" },
       // { name: "Held Item" },
     ],
   },
