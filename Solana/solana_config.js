@@ -11,14 +11,14 @@
  * Original Metaplex.js util by https://github.com/DawidAbram
  */
 
-const NFTName = "Weeping Angel"; //This is the name there will be showen on your NFTs !!! Name can at max be 32 characters !!!
-const symbol = "TEARS"; // !!! Symbol can at max be 10 characters !!!
+const NFTName = "LemurX"; //This is the name there will be showen on your NFTs !!! Name can at max be 32 characters !!!
+const symbol = "LemurX"; // !!! Symbol can at max be 10 characters !!!
 
 const baseUriPrefix = ""; // OPTIONAL, if you need to prefix your image#.png with a baseURI
-const description = "Burning with unwavering bullish determination, Fire Angels forge their path through searing challenges, their resolve flickering like an eternal flame. Adorned with shimmering embers, they radiate with intensity. Get ready to witness their awe-inspiring ferocity as they light up Solana!";
+const description = "LemurX is a groundbreaking project using NFT technology to create exclusive investment opportunities for passive income. It's all about making investing easier and more profitable.";
 const external_url = ""; // add optional external URL here, e.g, https://0n10nDivision.com
 
-const royaltyFee = 1000; // This is 10% royalty fee
+const royaltyFee = 500; // This is 10% royalty fee
 
 /**
  * Array of Creators.
@@ -26,8 +26,12 @@ const royaltyFee = 1000; // This is 10% royalty fee
  */
 const creators = [
   {
-    address: "WRWFx2agVp6JtFqbXYt144zEKyFV7VSTKR8uBwmwkqn", // Wallet address for royalties
-    share: 100, // Amount of shares for this wallet, can be more than one, all have to add up to 100 together !!! And a maximum of 4 creators !!!
+    address: "4pGbzCZsbdTxhJmndjS5bwZUMiRkvf6sxAsvAtbZLZVN", // Wallet address for royalties
+    share: 70, // Amount of shares for this wallet, can be more than one, all have to add up to 100 together !!! And a maximum of 4 creators !!!
+  },
+  {
+    "address": "43oTWD33yJoVB5rSr75nY2MMSgnBiaa5ABxJzJ2rmWHZ",
+    "share": 30,
   },
   // uncomment and edit for additional creator.
   // {

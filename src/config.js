@@ -28,8 +28,8 @@ const outputJPEG = false; // if false, the generator outputs png's
 const startIndex = 0;
 
 const format = {
-  width: 1500,
-  height: 1500,
+  width: 2048,
+  height: 2048,
   smoothing: true, // set to false when up-scaling pixel art.
 };
 
@@ -40,21 +40,21 @@ const background = {
 
 const layerConfigurations = [
   {
-    growEditionSizeTo: 100, //#850 earth, #575 air, #300 water, #225 fire
+    growEditionSizeTo: 3312, //#850 earth, #575 air, #300 water, #225 fire
     namePrefix: "", // Use to add a name to Metadata `name:`
     layersOrder: [
       { name: "Background" },
       {
-        name: "Back",
+        name: "Skin",
         // options: {
         //   bypassDNA: true,
         // },
       },
-      { name: "Element" },
-      { name: "Clothing" },
-      { name: "Head Gear" },
-      { name: "Necklace" },
-      { name: "Held Item" },
+      { name: "Clothes" },
+      { name: "Eyes" },
+      { name: "Mouth" },
+      { name: "Hedware" },
+      // { name: "Held Item" },
     ],
   },
   // {
